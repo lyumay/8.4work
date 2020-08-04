@@ -1,0 +1,91 @@
+.descImg{
+    width: 100%;
+    height: auto;
+    background: url("../images/desc.jpg");
+    height: 450px;
+}
+
+.record {
+    width: 100%;
+    height: 400px;
+    margin: 30px auto;
+    margin-top: 40px;
+    background: #fafafa;
+    overflow: hidden;
+}
+
+.record .proTit{
+    margin: 30px auto;
+}
+
+.record .proTit p{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    margin: 30px auto;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+.record .proTit p:first-child:before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    top: 50%;
+    height: 1px;
+    background: black;
+    left: -70px;
+}
+
+.record .proTit p:first-child:after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    top: 50%;
+    height: 1px;
+    background: black;
+    right: -70px;
+}
+
+.record ul{
+    width: 1000px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.record ul li{
+    float: left;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.record ul li {
+    margin: 20px;
+    position: relative;
+}
+
+.record ul li:hover:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.1);
+}
+
+.record ul li img{
+    margin: 30px 60px;
+    margin-bottom: 20px;
+}
+
+.record ul li p{
+    width: 100%;
+    text-align: center;
+}

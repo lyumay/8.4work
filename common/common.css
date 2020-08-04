@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:write;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #333;
+    display: flex;
+    line-height: 100px;
+    color: #fff;
+    font-size: 14px;
+}
+
+header .headerContent{
+    width: 1160px;
+    height: 100px;
+    display: flex;
+    line-height: 100px;
+    margin: 0 auto;
+}
+
+header ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li{
+    float: left;
+    margin-left: 40px;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+header ul li:hover{
+    color: rgb(208, 18, 27);
+}
+
+header .search{
+    display: flex;
+}
+
+header .search .mall{
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+header .search .mall div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(208, 18, 27);
+    margin-left: 16px;
+}
+header .search .mall div a{
+    color: white;
+    text-decoration: none;
+}
+header .search .mall div:hover{
+    background: #555;
+}
+
+header .search .input{
+    margin-left: 40px;
+    width: 140px;
+    height: 40px;
+
+}
+
+header .search input{
+    width: 140px;
+    height: 40px;
+    text-indent: 10px;
+}
+
+header .login{
+    margin-left: 20px;
+}
+
+header .login span{
+    margin-left: 5px;
+}
+
+.floatHeade{
+    position: fixed;
+    top: -80px;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    display: flex;
+    line-height: 80px;
+    color: #fff;
+    font-size: 14px;
+    background: rgba(0,0,0,.7);
+    transition: top .3s;
+}
+
+.floatHeade .headerContent{
+    width: 1160px;
+    height: 80px;
+    display: flex;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+.floatHeade ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.floatHeade ul li{
+    float: left;
+    margin-left: 40px;
+}
+.floatHeade ul li a{
+    color: white;
+    /* text-decoration: none; */
+}
+.floatHeade ul li:hover{
+    color: rgb(208, 18, 27);
+}
+
+.floatHeade .search{
+    display: flex;
+}
+
+.floatHeade .search .mall{
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.floatHeade .search .mall div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(208, 18, 27);
+    margin-left: 16px;
+}
+.floatHeade .search .mall div a{
+    color: white;
+    text-decoration: none;
+}
+.floatHeade .search .mall div:hover{
+    background: #555;
+}
+
+.floatHeade .search .input{
+    margin-left: 40px;
+    width: 140px;
+    height: 40px;
+
+}
+
+.floatHeade .search input{
+    width: 140px;
+    height: 40px;
+    text-indent: 10px;
+}
+
+.floatHeade .login{
+    margin-left: 20px;
+}
+
+.floatHeade .login span{
+    margin-left: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background: #333333;
+}
+
+footer .footerDes{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+    height: 200px;
+}
+
+footer .footerDes div{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+footer .footerDes div:nth-child(2) p{
+    line-height: 40px;
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    text-indent:  50px;
+}
+
+footer .footerDes div:nth-child(2) p:first-child{
+    margin-top: 30px;
+}
+footer .footerDes div:nth-child(3){
+    position: relative;
+}
+footer .footerDes div:nth-child(3) img{
+    position: absolute;
+    margin-top: 50px;
+    left: 40px;
+    /* float: left; */
+
+}
+footer .footerDes div:nth-child(3) p{
+    position: absolute;
+    line-height: 40px;
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    text-indent: 40px;
+    left: 150px;
+    top: 50px;
+
+}
+footer .footerDes div:nth-child(3) p:first-child{
+    position: absolute;
+    margin-top: 50px;
+}
+
+footer .copyright{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer .copyright p{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+}
+
+footer .copyright p:first-child{
+    margin-top: 20px;
+}
