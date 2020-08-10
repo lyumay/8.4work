@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面--仅作学习使用，侵删</title>
+</head>
+<link rel="stylesheet" href="common/common.css">
+<link rel="stylesheet" href="css/login.css">
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery.validate.js"></script>
+
+<body>
+    <!--  头部开始  -->
+    <header>
+        <div class="headerContent">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+            <ul>
+                <li>
+                    <a href="index.html"> 首页</a>
+                </li>
+                <li><a href="service.html">服务与支持</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="search">
+                <div class="mall">
+                    <div> <a href="https://mall.jd.com/index-623999.html">商城</a></div>
+                    <div>EN</div>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="请输入搜索内容">
+                </div>
+            </div>
+            <div class="login">
+                <span><a href="login.html">登录</a></span>
+                <span><a href="enroll.html">注册</a></span>
+            </div>
+        </div>
+    </header>
+    <!--  头部结束  -->
+
+    <!-- 服务与支持开始 -->
+    <script>
+        $(function () {
+            jQuery.validator.addMethod("China", function (value, element) {
+                var tel = /[\u4e00-\u9fa5]{2,}/;
+                return this.optional(element) || (tel.test(value));
+            }, "必须是2个以上的中文");
+
+            $("form").validate({
+                rules: {
+                    username:{
+                        required:true,
+                        China:true,
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5,
+                        equalTo: "#confirm_password"
+                    },
+                },
+                messages: {
+                    username:{
+                        required:"用户名必填",
+                        China:"必须是两个以上的中文",
+                    },
+                    password: {
+                        required: "密码必填",
+                        minlength: "不能少于5位",
+                        equalTo:"两次密码必须一致"
+                    },
+                }
+            })
+        })
+    </script>
+    <div class="record">
+        <div class="contain">
+            <div class="right">
+                <p>
+                    <label for="username">用户名或者邮箱</label><br>
+                    <input id="username" name="username" type="text" style="width: 300px;">
+                </p>
+                <p>
+                    <label for="password">密码</label><br>
+                    <input id="password" name="password" type="password" style="width: 300px;">
+                </p>
+                <p>
+                    <input type="checkbox" value="1" name="sex"><span class="remeber">记住我（请在私人设备上使用此功能）</span>
+                </p>
+                <p>
+                    <input class="submit" type="submit" value="登录">
+                    <a href="enroll.html" class="submit" type="submit">注册</a>
+                </p>
+                <div class="content">
+                   <a href="">忘记密码？点击这里找回</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 服务与支持结束 -->
+
+    <!-- 底部开始 -->
+    <footer>
+        <div class="footerDes">
+            <div>
+                <img src="images/logo.png" alt="">
+            </div>
+            <div>
+                <p>(电话) 0512 5013 2660</p>
+                <p>(邮箱) info@pgytech.com</p>
+                <p>(售后邮箱) service@pgytech.com</p>
+            </div>
+            <div>
+                <img src="images/table.png" alt="">
+                <p>扫码关注 <br>PGYTECH 蒲公英智能科技</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>版权所有 ©2019 昆山蒲公英智能科技有限公司</p>
+            <p>苏ICP备19001176号</p>
+        </div>
+    </footer>
+    <!-- 底部结束 -->
+</body>
+<script src="js/index.js"></script>
+
+</html>

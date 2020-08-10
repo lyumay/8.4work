@@ -53,3 +53,4 @@ var start = setInterval(function () {
     spans[index].style.border = "1px solid skyblue";
     index++;
 },3000)
+
